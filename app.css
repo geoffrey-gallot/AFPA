@@ -1,0 +1,145 @@
+/* TODO */
+
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 20vh;
+    background-image: url(support/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+    background-position: bottom;
+}
+header > i{
+    color: orangered;
+}
+footer{
+    display: flex;
+    background-color: lightgray;
+    width: 100%;
+    height: 10vh;
+    bottom: 0;
+}
+.contact, .el{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+.reseau, .el{
+    display: flex;
+    flex-direction: column;    
+}
+i{
+    color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 50vw;
+}
+#info{
+    /*border: 1px solid greenyellow;*/
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+.green{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 100, 0, 0.5);
+    border: 1px solid green;
+    font-size: 1em;
+}
+.red{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(100, 0,0, 0.5);
+    border: 1px solid red;
+    font-size: 1em;
+}
+#cache{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color:  #0081ff;
+    color: #f1f1f1;
+}
+#add{
+    display: flex;
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 50px; 
+    
+}
+.vue{
+    visibility: visible;
+}
+.pasvue{
+    visibility: hidden;
+}
+#nameMovie, #dateMovie, #realMovie{
+    height: 25px;
+}
+#send{
+    background-color:  #0081ff;
+    color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 70px;
+    height:30px;
+}
+#filters{
+    /*border: 1px solid gray;*/
+    width: 100%;
+    height: 50px;
+}
+#movieFilters{
+    height: 25px;
+}
+#movieList{
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr 1fr;
+    /*grid-template-rows: repeat(4, 1fr);*/
+    grid-gap: 0px;
+    /*border: 1px solid black;*/
+    width: 100%;
+    /*height: 100vh;*/
+}
+#title, #date, #real, #btnSup{
+    /*height: 40px;
+    border: 1px solid maroon;*/
+    text-align: center;
+}
+button.delete{
+    height: 18px;
+    border-radius: 10%;
+    background-color: #de3e44;
+    color: #f1f1f1;
+}
+button > i{
+    color: #f1f1f1;
+}
+ul{
+    padding-bottom: 0px;
+}
+li{
+    list-style: none;
+    margin-bottom: 40px;
+}
+.vide{
+    height: 18px;
+}

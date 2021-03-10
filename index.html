@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+          crossorigin="anonymous"/>
+
+    <title>Médiatèque</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <i class="fab fa-phoenix-squadron fa-8x" id="phenix"></i>
+    </header>
+    <div class="container">
+        <h1>Liste des films</h1>
+        <section id="info" class="">
+            <!--affiche valid ou invalid la donné rentré-->
+            <p id="info1"></p>
+            <p id="info2"></p>
+            <p id="info3"></p>
+        </section>
+        <button id="cache" >ajouter un film</button>
+        <form action="" id="add" class="pasvue">
+            <div id="addMovie">
+                <input type="text" name="name" id="nameMovie" placeholder="name">
+                <input type="number" name="years" id="dateMovie" placeholder="date">
+                <input type="text" name="authors" id="realMovie" placeholder="réalisateur">
+            </div>
+            <button id="send">Ajouter <i class="fas fa-plus"></i></button>
+        </form>
+
+        <section id="filters">
+                <select name="movieFilters" id="movieFilters">
+                    <option value="" id="">trier par</option>
+                    <option value="film" id="triFilm">Film</option>
+                    <option value="date" id="triDate">Date</option>
+                </select>
+        </section>
+        <section id="movieList">
+            <ul id="title"></ul>
+            <ul id="date"></ul>
+            <ul id="real"></ul>
+            <ul id="btnSup">
+
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <div class="contact">
+            <a href="#"><i class="fas fa-envelope fa-2x"></i>Nous contacter</a>
+            <a href="#"><i class="fas fa-phone-square-alt fa-2x"></i>Nous telephoner</a>
+        </div>
+        <div class="reseau">
+            <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
